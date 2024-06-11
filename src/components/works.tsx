@@ -20,7 +20,6 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-  live_site_link,
 }: ProjectCardProps) => (
   <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
     <Tilt
@@ -39,20 +38,6 @@ const ProjectCard = ({
           className="w-full h-full object-cover rounded-2xl"
         />
 
-        {/* Live Site */}
-        <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-          <div
-            onClick={() => window.open(live_site_link, "_blank", "noreferrer")}
-            className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-          >
-            <img
-              src={preview}
-              alt="Live Site"
-              title="Live Site"
-              className="w-2/3 h-2/3 object-contain"
-            />
-          </div>
-
           {/* Github */}
           <div
             onClick={() =>
@@ -68,7 +53,6 @@ const ProjectCard = ({
             />
           </div>
         </div>
-      </div>
 
       {/* Work Info */}
       <div className="mt-5">

@@ -4,14 +4,12 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
   StarsCanvas,
 } from "./components";
-import Banner from "./components/banner";
 import Footer from "./components/footer";
 
 // App
@@ -20,7 +18,6 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Banner hide={hide} setHide={setHide} />
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar hide={hide} />
@@ -30,7 +27,6 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
 
         {/* Contact */}
         <div className="relative z-0">

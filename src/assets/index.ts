@@ -37,10 +37,6 @@ import project4 from "./projects/project4.png";
 import project5 from "./projects/project5.png";
 import project6 from "./projects/project6.png";
 
-import user1 from "./testimonials/user1.jpg";
-import user2 from "./testimonials/user2.jpg";
-import user3 from "./testimonials/user3.jpg";
-
 import github from "./socials/github.svg";
 import linkedin from "./socials/linkedin.svg";
 import twitter from "./socials/twitter.svg";
@@ -79,9 +75,6 @@ export {
   project4,
   project5,
   project6,
-  user1,
-  user2,
-  user3,
   github,
   youtube,
   linkedin,
